@@ -3,7 +3,13 @@ spring:
     oauth2:
       resourceserver:
         clientId: app-resource-server
-        clientSecret: XXX-XXX-XXX-XXX
+        clientSecret:
         jwt:
-          issuer-uri: http://[host]:[port]/auth/realms/[realm]
-          jwk-set-uri: http://[host]:[port]/auth/realms/development/protocol/openid-connect/[realm]
+          issuer-uri: http:/[host]:[port]/auth/realms/[realm]
+          jwk-set-uri: http://[host]:[port]/auth/realms/[realm]/protocol/openid-connect/certs
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
