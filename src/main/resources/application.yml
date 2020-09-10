@@ -1,0 +1,9 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        clientId: app-resource-server
+        clientSecret: XXX-XXX-XXX-XXX
+        jwt:
+          issuer-uri: http://[host]:[port]/auth/realms/[realm]
+          jwk-set-uri: http://[host]:[port]/auth/realms/development/protocol/openid-connect/[realm]
