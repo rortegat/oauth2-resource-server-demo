@@ -11,13 +11,9 @@ Se requiere contar con Maven 3.3 o superior y el JDK 8 (puede ser de Oracle u Op
 Clona el proyectorio en tu directorio local y ábrelo desde la consola. Una vez dentro del proyecto ejecutar el comando:
 
 ```bash
-mvn clean install
-```
-
-Esto instalará todas las dependencias necesarias para poder compilar el proyecto, posteriormente se ejecuta con:
-
-```bash
 mvn spring-boot:run
 ```
+
+Esto instalará todas las dependencias necesarias para poder compilar el proyecto y empezara a correr la aplicación.
 
 Es necesario modificar el archivo properties.yml para que apunte a nuestro Authentication Server.
